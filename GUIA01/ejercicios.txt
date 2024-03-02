@@ -1,0 +1,37 @@
+A. Para convertir un numero decimal a binario se debe ir dividiendo el número decimal
+entre dos y anotar en una columna a la derecha el resto. La lista de ceros y unos leídos
+de abajo a arriba es el resultado.
+
+B. Para convertir un numero binario a decimal se debe asignar un valor a cada dígito del
+número binario, comenzando por el dígito que está más a la derecha y moviéndote.
+hacia la izquierda. A cada número se le asigna la correspondiente potencia base 2 y, al
+final, se suman las potencias.
+Para 10101100 tendriamos: 
+0 * 2^0 = 0
+0 * 2^1 = 0
+1 * 2^2 = 4
+1 * 2^3 = 8
+0 * 2^4 = 0
+1 * 2^5 = 32
+0 * 2^6 = 0
+1 * 2^7 = 128, La suma es 0 + 0 + 4 + 8 + 0 + 32 + 0 + 128 = 172
+
+C. En Python para representar los 4 diferentes sistemas de numeración utilizados
+mayormente son (binario, octal, decimal y hexadecimal), para utilizarlos necesitamos
+los prefijos:
+Sistema de numeración   Prefijo
+Binario                 0b o 0B
+Octal                   0o o 0O
+Hexadecimal             ox 0 ox
+
+Esto nos facilita enormemente el trabajo, dado que podemos hacer distintas
+conversiones fácilmente.
+
+EJERCICIOS PROPUESTOS
+A. Efectué un programa básico que muestre un menú con 4 opciones utilizando los
+algoritmos de sistemas de numeración en Python. Las 5 opciones deben ser:
+1. Suma de dos números binarios enteros
+2. Multiplicación de dos números hexadecimales
+3. Conversión de Hexadecimal a Octal
+4. Resta de dos números octales
+5. Salir
